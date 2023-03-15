@@ -13,7 +13,7 @@ const Login = () => {
         toast.success('dang nhap thanh cong')
         localStorage.setItem('accessoken',res?.data?.data?.access_token)
         localStorage.setItem('user',JSON.stringify(res?.data?.data?.data_user))
-        navigate('/marks')
+        navigate('/teacher')
        } else{
         toast.error('dang nhap dep dc')
        }
